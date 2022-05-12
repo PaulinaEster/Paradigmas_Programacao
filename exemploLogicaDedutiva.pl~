@@ -1,0 +1,66 @@
+
+
+/*
+Um programa lógico é constituído de sentenças que
+expressam o conhecimento relevante ao problema
+que o programa pretende resolver
+
+Paradigma baseado na lógica de predicados (lógica
+matemática dedutiva)
+Exemplo:
+Totó é um cachorro.
+Todo cachorro é um mamífero.
+Logo, Totó é um mamífero.
+
+*/
+
+
+elefante(dumbo).
+
+cachorro(azulao).
+
+mamifero(X) :- cachorro(X); elefante(X).
+/*
+RESULTADO
+
+?- consult(exemploLogicaDedutiva).
+true.
+
+?- mamifero(X).
+X = azulao ;
+X = dumbo.
+
+*/
+
+
+/*Estas cláusulas (sem condições) definem fatos sobre o
+domínio do problema*/
+
+pai(pedro, maria).
+
+pai(joao, luiz).
+
+mae(maria, luiz).
+avo_materno(pedro, luiz) :- pai(pedro,maria), mae(maria, luiz).
+
+/*
+RESULTADO
+
+?- consult(exemploLogicaDedutiva).
+true.
+
+?- avo_materno(pedro, luiz).
+true.
+
+?- avo_materno(pedro, X).
+X = luiz.
+
+?- pai(X, Y).
+X = pedro,
+Y = maria.
+
+?-
+
+*/
+
+

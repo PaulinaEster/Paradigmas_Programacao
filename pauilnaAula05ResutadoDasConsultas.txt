@@ -1,0 +1,34 @@
+
+
+
+?- consult(paulinaAula05).
+true.
+
+?- professor_discente(Professor,Aluno).
+Professor = joao,
+Aluno = paulina ;
+Professor = paula,
+Aluno = gabriela ;
+Professor = paula,
+Aluno = tainara.
+
+?- consult(paulinaAula05).
+true.
+
+?- carga_horaria(X, Y).
+X = paradigmas,
+Y = 60 ;
+X = programacao,
+Y = 80 ;
+X = algoritmos,
+Y = 75.
+
+?- carga_horaria(X, Y), Y < 90.
+X = paradigmas,
+Y = 60 ;
+X = programacao,
+Y = 80 ;
+X = algoritmos,
+Y = 75.
+
+?

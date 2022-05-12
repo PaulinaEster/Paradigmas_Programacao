@@ -30,24 +30,6 @@ discente(tainara, programacao).
 professor_discente(Professor, Aluno) :- ministra(Professor, Disciplina),discente(Aluno, Disciplina).
 
 /*
-RESULTADO:
-
-
-?- consult(paulinaAula05).
-true.
-
-?- professor_discente(Professor, Discente).
-Professor = joao,
-Discente = paulina ;
-Professor = paula,
-Discente = gabriela ;
-Professor = paula,
-Discente = tainara.
-
-*/
-
-
-/*
 EXEMOPLO COM NUMEROS:
 */
 carga_horaria(paradigmas, 60).
