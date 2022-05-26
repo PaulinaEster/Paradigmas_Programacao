@@ -1,0 +1,17 @@
+cachorro(docky).
+gato(garfield).
+peixe(nemo).
+
+passaro(dudu).
+
+pessoa(maria).
+pessoa(joao).
+
+magro(docky).
+gordo(garfild).
+
+
+gato_gosta(X) :- peixe(X); passaro(X) ; pessoa(X).
+gato_come(X) :- gato_gosta(X), not(pessoa(X)).
+
+cachorro_gosta(X) :-  pessoa(X).
